@@ -96,7 +96,7 @@ class BinanceExchange(AbstractExchange):
                 elif filter['filterType'] == 'LOT_SIZE':
                     step_size = Decimal(filter["stepSize"])
 
-                elif filter['filterType'] == 'MIN_NOTIONAL':
+                elif filter['filterType'] == 'NOTIONAL':
                     min_notional = Decimal(filter["minNotional"])
 
                 elif filter['filterType'] == 'PERCENT_PRICE':
